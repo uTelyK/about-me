@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2);
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+.hien-thi {
+    width: 300px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.anh-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.ten-nguoi-dung {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.tag-nguoi-dung {
+    font-size: 15px;
+    margin: 5px 10;
+}
+.mang-xa-hoi {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.mang-xa-hoi a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+.button {
+    margin-top: 15px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background: #333;
+    color: rgb(255, 255, 255);
+}
