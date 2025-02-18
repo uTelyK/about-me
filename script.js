@@ -4,7 +4,7 @@ document.getElementById('nutCopylink').addEventListener('click', function() {
  
         const button = document.getElementById('nutCopylink');
         const originalText = button.textContent;
-        button.textContent = 'Copied';
+        button.textContent = 'Đã  copy link!';
     // debounce cua copy button set bang 2 giay
         setTimeout(function() {
             button.textContent = originalText;
