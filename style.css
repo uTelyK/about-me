@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,14 +7,31 @@ body {
     height: 100vh;
     margin: 0 auto;
     background-color: #f0f0f0;
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/911/205/312/artwork-digital-art-landscape-river-wallpaper-34bcf418eda962a9c4e374a9392182dd.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+hr {
+    width: 65%;
 }
 .hien-thi {
-    width: 300px;
-    background: #ffffff;
+    width: 500px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(153, 153, 255, 0.5));
+   /* background: linear-gradient(to bottom, #ffffff 0%, #9999ff 100%); */
+    background-color: rgb(255, 255, 255, 0.7) ;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+}
+.button-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%; 
 }
 .anh-profile {
     width: 80px;
@@ -25,6 +42,7 @@ body {
 .ten-nguoi-dung {
     font-size: 18px;
     font-weight: bold;
+    color: #687476;
     margin: 10px 0;
 }
 .tag-nguoi-dung {
@@ -35,6 +53,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin: 0 auto;
     margin-top: 10px;
 }
 .mang-xa-hoi a {
@@ -42,9 +61,28 @@ body {
     font-size: 20px;
     color: #333;
 }
+.button-selection {
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: large;
+    border-radius: 100px;
+    /* border: solid 1px rgb(0, 0, 0); */
+}
+/*.button-selection-1, .button {
+    width: 80%; ( đảm bảo nút không quá rộng )
+    max-width: 300px; ( giới hạn độ rộng tối đa )
+    padding: 15px; 
+    text-align: center;
+} */
 .button {
     margin-top: 15px;
     padding: 10px;
+    margin-inline: 10px;
     background: black;
     color: white;
     border: none;
