@@ -100,7 +100,7 @@ hr {
 /* Responsive Design */
 @media (max-width: 600px) {
     .hien-thi {
-        width: 95%;
+        width: 70%;
         padding: 15px;
     }
 
@@ -122,7 +122,7 @@ hr {
     }
 
     .hien-thi {
-        width: 95%;
+        width: 70%;
         max-width: 350px;
         padding: 15px;
     }
