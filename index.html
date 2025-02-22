@@ -2,15 +2,16 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uTelyK | Github Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>uTelyK | Github Portfolio</title>
 </head>
 <body>
     <div class="hien-thi">
         <img src="https://images-ext-1.discordapp.net/external/wiki2IVnl8bJOfy5elHXUr1LM0hk6zQyeKWLOXPVhTU/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/454541648970514453/40c2f7ef6913c22d36e5828aedc70ced.png?format=webp&quality=lossless" alt="profile picture" class="anh-profile">
         <div class="ten-nguoi-dung">Từ Khải Thông</div>
-        <hr>
+        <hr>    
         <div class="tag-nguoi-dung">* /uTelyK</div>
         <!-- debugging
         <div class="mang-xa-hoi">
@@ -29,7 +30,29 @@
             <button class="button-selection">🆚 Soundcloud Playlists</button>
             <button class="button" id="nutCopylink">Ấn vào đây để copy link trang!</button>
         </div>  
+        <section>
+            <div class="trang-thai-spotify">    
+                <div class="thong-tin-bai-hat">
+                    <img src="https://i1.sndcdn.com/artworks-N6CdpE7Mqzl3MOR2-hcbUww-t500x500.png" alt="album cover" class="anh-bai-hat">
+                    <div class="chu-bai-hat">
+                        <div id="player"></div> 
+        
+                        <div class="player-controls">
+                            <div class="play-button" id="playPauseButton">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <input type="range" id="progressBar" value="0" min="0" step="1">
+                        </div>
+        
+                        <div class="ten-bai-hat">Drill sẽ trả lời.</div>
+                        <div class="ten-nghe-si"><a href="https://soundcloud.com/htingale-nigarc" style="text-decoration: none; color: #e9e9e9;">Htingale</a></div>
+                    </div>
+                </div>            
+            </div>          
+        </section>        
     </div>
     <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>   
 </body>
 </html>
