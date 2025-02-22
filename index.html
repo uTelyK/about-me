@@ -2,14 +2,17 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>uTelyK | Github Portfolio</title>
 </head>
 <body>
     <div class="hien-thi">
-        <img src="https://images-ext-1.discordapp.net/external/wiki2IVnl8bJOfy5elHXUr1LM0hk6zQyeKWLOXPVhTU/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/454541648970514453/40c2f7ef6913c22d36e5828aedc70ced.png?format=webp&quality=lossless" alt="profile picture" class="anh-profile">
+        <div class="profile-container">
+            <img src="https://images-ext-1.discordapp.net/external/wiki2IVnl8bJOfy5elHXUr1LM0hk6zQyeKWLOXPVhTU/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/454541648970514453/40c2f7ef6913c22d36e5828aedc70ced.png?format=webp&quality=lossless" alt="pfp" class="anh-profile">
+            <img src="https://cdn.discordapp.com/avatar-decoration-presets/a_63a69109db554a66764cbe61c6e556ef.png?size=160&passthrough=false" alt="khung" class="khung">
+        </div>
         <div class="ten-nguoi-dung">Từ Khải Thông</div>
         <hr>    
         <div class="tag-nguoi-dung">* /uTelyK</div>
@@ -25,10 +28,20 @@
             <p>📫 Email liên hệ: <a href="mailto:your-email@example.com">steveanchers23@gmail.com</a></p>
         </div>
         <div class="button-container">
-            <button class="button-selection">Các blog về đời sống và công việc của mình</button>
-            <button class="button-selection">🎶 Spotify Playlists</button>
-            <button class="button-selection">🆚 Soundcloud Playlists</button>
-            <button class="button" id="nutCopylink">Ấn vào đây để copy link trang!</button>
+            <div class="button-container">
+                <button class="button-selection" onclick="window.location.href='https://yourportfolio.com' ">
+                    My portfolio (For Business only)
+                </button>
+            
+                <button class="button-selection" onclick="window.location.href='https://open.spotify.com/user/317jvtycuhfqtluxd3gu5kiaxdty'">
+                    🎶 Spotify Playlists
+                </button>
+            
+                <button class="button-selection" onclick="window.location.href='https://soundcloud.com/steveanchers'">
+                    🆚 Soundcloud Playlists
+                </button>
+            </div>
+            <button class="button" id="nutCopylink" >Ấn vào đây để copy link trang!</button>
         </div>  
         <section>
             <div class="trang-thai-spotify">    
