@@ -37,23 +37,22 @@ hr {
 }
 .profile-container {
     position: relative;
-    display: inline-block;
-    width: 100px; 
-    height: 100px;
+    display: inline-block; 
+    width: 30vw; /* Tự động co giãn theo màn hình */
+    max-width: 150px; /* Giữ khung không quá lớn trên màn hình rộng */
 }
 .anh-profile {
-    width: 80px;
-    height: 80px;
+    width: 90%; /* Đảm bảo ảnh co giãn */
+    height: auto;
     border-radius: 50%;
-    object-fit: cover;
 }
 .khung {
     position: absolute;
-    top: 50%;
+    width: 110%; /* Giữ khung lớn hơn ảnh một chút */
+    height: auto;
+    top: 60%;
     left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%, -59%); 
+    transform: translate(-50%, -59%);
     pointer-events: none;
 }
 .ten-nguoi-dung {
@@ -249,7 +248,14 @@ hr {
         text-align: center;
     }
 }
-
+@media screen and (max-width: 600px) {
+    .profile-container {
+        width: 40vw; /* Tăng kích thước trên mobile */
+    }
+    .khung {
+        width: 50%; /* Điều chỉnh lại khung */
+    }
+}
 @media (max-width: 768px) {
     .hien-thi {
         width: 85%;
