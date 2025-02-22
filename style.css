@@ -17,7 +17,7 @@ hr {
 }
 .hien-thi {
     width: 90%;
-    margin-top: 200px; 
+    margin-top: 300px; 
     max-width: 500px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(153, 153, 255, 0.5));
     padding: 20px;
@@ -36,6 +36,7 @@ hr {
 .profile-container {
     position: relative;
     display: inline-block; 
+    margin-top: 50px;
     width: 30vw; /* Tự động co giãn theo màn hình */
     max-width: 150px; /* Giữ khung không quá lớn trên màn hình rộng */
 }
@@ -216,7 +217,9 @@ hr {
     background: #333;
     color: rgb(255, 255, 255);
 }
-/* responsive cho thiet bi di dong  */
+
+
+/* Responsive Design */
 @media (max-width: 1024px) {
     body {
         height: auto;
@@ -227,6 +230,7 @@ hr {
     .hien-thi {
         width: 80%;
         max-width: 600px;
+        margin-top: 30px;
     }
 
     .button-selection {
@@ -234,203 +238,28 @@ hr {
         padding: 18px;
     }
 
-    .trang-thai-spotify {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .thong-tin-bai-hat {
+    .trang-thai-spotify, .thong-tin-bai-hat {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 }
-@media screen and (max-width: 600px) {
+
+@media (max-width: 768px) {
+    .hien-thi {
+        width: 85%;
+        max-width: 500px;
+        padding: 15px;
+        margin-top: 80px;
+    }
+
     .profile-container {
-        width: 40vw; /* Tăng kích thước trên mobile */
+        width: 40vw;
+        max-width: 120px;
     }
+
     .khung {
-        width: 50%; /* Điều chỉnh lại khung */
-    }
-}
-@media (max-width: 768px) {
-    .hien-thi {
-        width: 85%;
-        max-width: 500px;
-        padding: 15px;
-    }
-
-    .anh-profile {
-        width: 70px;
-        height: 70px;
-    }
-
-    .ten-nguoi-dung {
-        font-size: 16px;
-    }
-
-    .tag-nguoi-dung {
-        font-size: 14px;
-    }
-
-    .mang-xa-hoi a {
-        font-size: 18px;
-    }
-
-    .button-selection {
-        font-size: 16px;
-        padding: 15px;
-    }
-
-    .button {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .trang-thai-spotify {
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .thong-tin-bai-hat img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .ten-bai-hat {
-        font-size: 16px;
-        max-width: 150px;
-        padding: 4px 8px;
-    }
-
-    .ten-nghe-si {
-        font-size: 13px;
-        padding: 3px 6px;
-    }
-
-    .play-button {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    .player-controls {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-    #progressBar {
-        max-width: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hien-thi {
-        width: 90%;
-        max-width: 350px;
-        padding: 10px;
-    }
-
-    .anh-profile {
-        width: 60px;
-        height: 60px;
-    }
-
-    .ten-nguoi-dung {
-        font-size: 14px;
-    }
-
-    .tag-nguoi-dung {
-        font-size: 13px;
-    }
-
-    .mang-xa-hoi a {
-        font-size: 16px;
-    }
-
-    .button-selection {
-        font-size: 14px;
-        padding: 12px;
-    }
-
-    .button {
-        font-size: 13px;
-        padding: 10px;
-    }
-
-    .trang-thai-spotify {
-        padding: 10px;
-        gap: 5px;
-    }
-
-    .thong-tin-bai-hat img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .ten-bai-hat {
-        font-size: 14px;
-        max-width: 120px;
-        padding: 3px 6px;
-    }
-
-    .ten-nghe-si {
-        font-size: 12px;
-        padding: 2px 5px;
-    }
-
-    .play-button {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-    }
-
-    .player-controls {
-        gap: 4px;
-    }
-
-    #progressBar {
-        max-width: 120px;
-    }
-}
-/* Responsive Design - Điều chỉnh cho màn hình nhỏ hơn */
-@media (max-width: 1024px) {
-    body {
-        height: auto;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .hien-thi {
         width: 80%;
-        max-width: 600px;
-    }
-
-    .button-selection {
-        font-size: 18px;
-        padding: 18px;
-    }
-
-    .trang-thai-spotify {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .thong-tin-bai-hat {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .hien-thi {
-        width: 85%;
-        max-width: 500px;
-        padding: 15px;
     }
 
     .anh-profile {
@@ -497,11 +326,33 @@ hr {
         max-width: 150px;
     }
 }
+
+@media (max-width: 600px) {
+    .profile-container {
+        width: 50vw;
+        max-width: 100px;
+    }
+
+    .khung {
+        width: 130%;
+    }
+}
+
 @media (max-width: 480px) {
     .hien-thi {
         width: 90%;
         max-width: 350px;
         padding: 10px;
+        margin-top: 50px;
+    }
+
+    .profile-container {
+        width: 50vw;
+        max-width: 100px;
+    }
+
+    .khung {
+        width: 80%;
     }
 
     .anh-profile {
