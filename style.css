@@ -42,13 +42,26 @@ hr {
 }
 .anh-profile {
     width: 90%; /* Đảm bảo ảnh co giãn */
+    margin-top: 80px;
     height: auto;
     border-radius: 50%;
+}
+.khung-container  {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 603px; 
+    max-width: 540px;
+    margin-left: 75px;
+    margin-right: 75px;
+    transform: translate(-50%, -59%);
+    pointer-events: none;
 }
 .khung {
     position: absolute;
     width: 110%; /* Giữ khung lớn hơn ảnh một chút */
     height: auto;
+    margin-top: 30px;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -59%);
@@ -233,6 +246,7 @@ hr {
         margin-top: 30px;
     }
 
+
     .button-selection {
         font-size: 18px;
         padding: 18px;
@@ -244,7 +258,13 @@ hr {
         text-align: center;
     }
 }
-
+@media (max-width:960px) {
+    .khung-container {
+        max-width: 640px;
+        position: absolute;
+        margin-top: 718px; 
+    }
+}
 @media (max-width: 768px) {
     .hien-thi {
         width: 85%;
@@ -261,7 +281,12 @@ hr {
     .khung {
         width: 80%;
     }
-
+    .khung-container {
+        max-width: 530px;
+        position: absolute;
+        margin-top: 595px; 
+        margin-left: 60px;
+    }
     .anh-profile {
         width: 70px;
         height: 70px;
@@ -336,6 +361,12 @@ hr {
     .khung {
         width: 130%;
     }
+    .khung-container {
+        max-width: 530px;
+        position: absolute;
+        margin-top: 595px; 
+        margin-left: 60px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -354,7 +385,12 @@ hr {
     .khung {
         width: 80%;
     }
-
+    .khung-container {
+        max-width: 530px;
+        position: absolute;
+        margin-top: 595px; 
+        margin-left: 60px;
+    }
     .anh-profile {
         width: 60px;
         height: 60px;
@@ -415,5 +451,30 @@ hr {
 
     #progressBar {
         max-width: 120px;
+    }
+}
+@media (max-width:400px) {
+    .khung-container {
+        margin-left: 50px;
+        max-width: 335px;
+        position: absolute;
+        margin-top: 377px; 
+    }
+}
+@media (max-width:480px) {
+    .khung-container {
+        margin-left: 50px;
+        max-width: 370px;
+        position: absolute;
+        margin-top: 417px; 
+    }
+}
+@media (max-width:384px) {
+    .khung-container {
+        margin-left: 50px;
+        max-width: 327px;
+        border-radius: 11px;
+        position: absolute;
+        margin-top: 367px; 
     }
 }
