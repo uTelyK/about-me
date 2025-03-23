@@ -42,26 +42,15 @@ hr {
 }
 .anh-profile {
     width: 90%; /* Đảm bảo ảnh co giãn */
-    margin-top: 80px;
+    margin-top: 0px;
     height: auto;
     border-radius: 50%;
-}
-.khung-container  {
-    position: absolute;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 603px; 
-    max-width: 540px;
-    margin-left: 75px;
-    margin-right: 75px;
-    transform: translate(-50%, -59%);
-    pointer-events: none;
 }
 .khung {
     position: absolute;
     width: 110%; /* Giữ khung lớn hơn ảnh một chút */
     height: auto;
-    margin-top: 30px;
+    margin-top: 0px;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -59%);

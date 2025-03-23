@@ -1,16 +1,5 @@
-document.getElementById('nutCopylink').addEventListener('click', function() {
-    const link = window.location.href;
-    navigator.clipboard.writeText(link).then(function() {
-        const button = document.getElementById('nutCopylink');
-        const originalText = button.textContent;
-        button.textContent = 'Copied';
-        setTimeout(function() {
-            button.textContent = originalText;
-        }, 2000);
-    }).catch(function(err) {
-        console.error('khong the copy: ', err);
-    });
-});
+// Version: v.1.0.0
+// Last Updated: 2025-2-3
 
 var player;
 var isPlaying = false;
@@ -72,18 +61,3 @@ function updateProgressBar() {
 }
 
 setInterval(updateProgressBar, 1000);
-
-progressBar.addEventListener("input", function () {
-    if (player && player.seekTo) {
-        var duration = player.getDuration();
-        var seekTime = (progressBar.value / 100) * duration;
-        player.seekTo(seekTime, true);
-    }
-});
-
-const introDuration = 1.4; 
-
-setTimeout(() => {
-    let img = document.getElementById("animation");
-    img.src = "https://cdn.discordapp.com/assets/profile_effects/effects/2025-02-04/heartstrings_theory_red/idle.png";
-}, introDuration * 1000);
